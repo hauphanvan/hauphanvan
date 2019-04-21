@@ -52,15 +52,15 @@ public class ProductRepositoryImpl implements ProductRepository{
 		String sql = "INSERT INTO PRODUCTS(ID, NAME, UNIT_PRICE, MANUFACTURER, CATEGORY, UNITS_IN_STOCK, UNITS_IN_ORDER, DESCRIPTION, PRODUCT_CONDITION, DISCONTINUED) VALUES(:id, :name, :unitPrice, :manufacturer, :category, :unitsInStock, :unitsInOrder,  :description, :condition, :discontinued)";
 		Map<String, Object> paramMap = new HashMap<String, Object>();
 		paramMap.put("id", product.getProductId());
-		paramMap.put("id", product.getName());
-		paramMap.put("id", product.getUnitPrice());
-		paramMap.put("id", product.getManufacturer());
-		paramMap.put("id", product.getCategory());
-		paramMap.put("id", product.getUnitsInStock());
-		paramMap.put("id", product.getUnitsInOrder());
-		paramMap.put("id", product.getDescription());
-		paramMap.put("id", product.getCondition());
-		paramMap.put("id", product.isDiscontinued());
+		paramMap.put("name", product.getName());
+		paramMap.put("unitPrice", product.getUnitPrice());
+		paramMap.put("manufacturer", product.getManufacturer());
+		paramMap.put("category", product.getCategory());
+		paramMap.put("unitsInStock", product.getUnitsInStock());
+		paramMap.put("unitsInOrder", product.getUnitsInOrder());
+		paramMap.put("description", product.getDescription());
+		paramMap.put("condition", product.getCondition());
+		paramMap.put("discontinued", product.isDiscontinued());
 		
 		jdbcTemplate.update(sql, paramMap);
 	}
