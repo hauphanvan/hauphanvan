@@ -75,7 +75,8 @@
 					</div>
 					
 					<div class="form-group">
-						<div class="col-lg-6 col-lg-offset-2">
+						<div class="col-lg-2"></div>
+						<div class="col-lg-6">
 							<input type="submit" class="btn btn-primary" value="Submit">
 						</div>
 					</div>
