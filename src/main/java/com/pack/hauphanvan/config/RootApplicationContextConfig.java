@@ -14,10 +14,10 @@ public class RootApplicationContextConfig {
 	@Bean
 	public DataSource dataSource() {
 		DriverManagerDataSource ds = new DriverManagerDataSource();
-		ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		ds.setUrl("jdbc:mysql://localhost:3306/vanhau");
-		ds.setUsername("root");
-		ds.setPassword("912345678");
+		ds.setDriverClassName(DB.driverClass);
+		ds.setUrl(DB.urlVar);
+		ds.setUsername(DB.userName);
+		ds.setPassword(DB.password);
 		
 		return ds;
 	}
