@@ -1,4 +1,4 @@
-package com.packt.tinhte.config;
+package com.pack.hauphanvan.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
