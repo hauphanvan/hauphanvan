@@ -19,7 +19,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.formLogin().loginPage("/login").usernameParameter("username").passwordParameter("password");
-		http.formLogin().defaultSuccessUrl("/product/products").failureUrl("/login?errors");
+		http.formLogin().defaultSuccessUrl("/product/").failureUrl("/login?errors");
 		http.logout().logoutSuccessUrl("/login?logout");
 		http.exceptionHandling().accessDeniedPage("/login?accessDenied");
 		http.authorizeRequests().antMatchers("/").permitAll().antMatchers("/**/add/").access("hasRole('ADMIN')").antMatchers("/**/products").access("hasRole('USER')");
