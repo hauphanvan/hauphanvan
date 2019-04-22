@@ -19,25 +19,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Hauphanvan</a>
+      <a class="navbar-brand" href='<c:url value="/"></c:url>'>Hauphanvan</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href='<c:url value="/product/products"></c:url>'>Home</a></li>
+        <li><a href='<c:url value="/product/products"></c:url>'>Home</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">SmartPhone<span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="'<c:url value="/product/products/Smartphone"></c:url>'">SmartPhone<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">IPhone</a></li>
             <li><a href="#">SamSung</a></li>
             <li><a href="#">Huawei</a></li>
           </ul>
         </li>
-        <li><a href="#">Tablet</a></li>
-        <li><a href="#">Laptop</a></li>
+        <li><a href='<c:url value="/product/products/Tablet"></c:url>'>Tablet</a></li>
+        <li><a href='<c:url value="/product/products/Laptop"></c:url>'>Laptop</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href='<c:url value="/Signup"></c:url>'><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href='<c:url value="/login"></c:url>'><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         <li class="dropdown">
         	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Language</a>
         	<ul class="dropdown-menu">
