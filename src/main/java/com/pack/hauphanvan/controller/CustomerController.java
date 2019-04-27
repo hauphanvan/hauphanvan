@@ -1,6 +1,7 @@
 package com.pack.hauphanvan.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -16,6 +17,9 @@ import com.pack.hauphanvan.service.ProductService;
 public class CustomerController {
 	@Autowired
 	private CustomerService cutomerService;
+	
+	@Autowired
+	private AuthenticationManagerBuilder manager;
 	
 	@RequestMapping("/customers")
 	public String showAllCustomer(Model model) {
@@ -38,4 +42,6 @@ public class CustomerController {
 		
 		return "redirect:/login";
 	}
+	
+	
 }
