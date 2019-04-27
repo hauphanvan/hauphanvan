@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<title>HauPhanVan.com</title>
-	<link rel="shortcut icon" type="image/x-icon" href='<c:url value="/img/title3.png"></c:url>' />
+	<link rel="shortcut icon" type="image/x-icon" href='<c:url value="/img/title4.png"></c:url>' />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
