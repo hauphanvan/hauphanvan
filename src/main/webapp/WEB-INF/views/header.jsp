@@ -35,6 +35,7 @@
         </li>
         <li><a href='<c:url value="/product/products/Tablet"></c:url>'>Tablet</a></li>
         <li><a href='<c:url value="/product/products/Laptop"></c:url>'>Laptop</a></li>
+        <li><a href='<c:url value="/product/add"></c:url>'>Add New Product</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href='<c:url value="/Signup"></c:url>'><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
