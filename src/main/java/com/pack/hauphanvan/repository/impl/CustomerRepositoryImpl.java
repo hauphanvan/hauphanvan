@@ -34,12 +34,13 @@ public class CustomerRepositoryImpl implements CustomerRepository{
 	}
 
 	public void addNewCustomer(Customer customer) {
-		String sql = "INSERT INTO CUSTOMERS(ID, NAME, ADDRESS, NO_OF_ORDERS_MADE) VALUES(:id, :name, :address, :noOfOrdersMade)";
+		String sql = "INSERT INTO CUSTOMERS(ID, NAME, ADDRESS, NO_OF_ORDERS_MADE, PASSWORD) VALUES(:id, :name, :address, :noOfOrdersMade, :password)";
 		Map<String, Object> mapParam = new HashMap<String, Object>();
 		mapParam.put("id", customer.getCustomerId());
 		mapParam.put("name", customer.getName());
 		mapParam.put("address", customer.getAddress());
 		mapParam.put("noOfOrdersMade", customer.getNoOfOrdersMade());
+		mapParam.put("password", customer.getPassword());
 		
 		jdbcTemplate.update(sql, mapParam);
 	}
@@ -52,6 +53,7 @@ public class CustomerRepositoryImpl implements CustomerRepository{
 			customer.setName(rs.getString("NAME"));
 			customer.setAddress(rs.getString("ADDRESS"));
 			customer.setNoOfOrdersMade(rs.getLong("NO_OF_ORDERS_MADE"));
+			customer.setPassword(rs.getString("PASSWORD"));
 			
 			return customer;
 		}

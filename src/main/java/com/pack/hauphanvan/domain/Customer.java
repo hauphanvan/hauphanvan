@@ -5,6 +5,21 @@ import java.io.Serializable;
 public class Customer implements Serializable{
 	private static final long serialVersion = 3678108792576131001L;
 	private String customerId;
+	private String password;
+	/**
+	 * @return the password
+	 */
+	public String getPassword() {
+		return password;
+	}
+
+	/**
+	 * @param password the password to set
+	 */
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	private String name;
 	private String address;
 	private long noOfOrdersMade;
