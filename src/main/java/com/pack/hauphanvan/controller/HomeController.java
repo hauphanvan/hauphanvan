@@ -34,4 +34,9 @@ public class HomeController {
 		
 		return "exceptionPage";
 	}
+	
+	@RequestMapping("/about")
+	public String showAbout() {
+		return "about";
+	}
 }
