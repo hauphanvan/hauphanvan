@@ -20,7 +20,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Autowired
 	public void configureGlobalSecurity(AuthenticationManagerBuilder manager) throws Exception {
 		manager.inMemoryAuthentication().withUser("vanhau").password("vanhau").roles("USER", "ADMIN");
-		manager.inMemoryAuthentication().withUser("john").password("john").roles("USER");
+		manager.inMemoryAuthentication().withUser("vanhau").password("vanhau").roles("USER");
 		
 		
 	}
