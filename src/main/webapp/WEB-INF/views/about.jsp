@@ -5,7 +5,7 @@
 		<a href="https://www.efset.org/cert/AChyJB" class="btn btn-success">English Certificate</a>
 		<a href="https://github.com/nobody9123" class="btn btn-success">GITHUB</a>
 		<a href="https://www.hackerrank.com/nobody9123" class="btn btn-success">Hackerrank profile</a><br>
-		<p>I want to express my gratitude to <a href="https://codingbat.com">codingbat.com</a>, <a href="https://www.hackerrank.com/nobody9123">hackerrank.com</a>, <a href="https://www.javatpoint.com/">javatpoint.com</a>, <a>thenewboston channel</a>, for guiding me to where i'am standing today</p>
+		<p>I want to express my gratitude to <a href="https://codingbat.com">codingbat.com</a>, <a href="https://www.hackerrank.com/nobody9123">hackerrank.com</a>, <a href="https://www.javatpoint.com/">javatpoint.com</a>, <a>thenewboston channel</a>, <a href="https://codegym.cc">codegym.cc</a>, and the others for guiding me to where i'am standing today</p>
 	</div>
 </div>
 </body>
